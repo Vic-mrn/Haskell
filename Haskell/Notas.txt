@@ -1,0 +1,61 @@
+Informacion de un Operador
+:info 'Operador'
+
+Tipo de un Operador
+:type ('Operador')
+
+------------------------------------------------------------------------------------------------------------
+Operador ":"
+Nos sirve para concatenar en listas
+Por ejemplo:
+
+1:[2,3] nos daria como resultado la lista [1,2,3]
+
+Nota: Hacer un programa que acepte numero pero si son iguales no aceptarlos
+------------------------------------------------------------------------------------------------------------
+Operador "++"
+Nos sirve para concatenar listas
+Por ejemplo:
+
+[1,2,3]++[7,8,9] nos daria una lista igual a [1,2,3,7,8,9]
+
+En este caso si es posible usar "()" para cambiar el orden de ejecucion, debido a que si respeta la asignatura de tipos
+------------------------------------------------------------------------------------------------------------
+Tuplas y listas
+
+Las tuplas se identifican con () y pueden contener diferentes elementos
+
+Las lstas se representan con [] y solo pueden contener elementos del mismo tipos
+
+------------------------------------------------------------------------------------------------------------
+Listas de comprehension 
+
+[(x,y) | x <- [1,2,3], y <- [4,5]]
+
+Generadores dependientes
+
+[(x,y) | x <- [1..3], y <- [x..3]]
+
+Aqui la lista x existe pero la lista y depende de x para Operador
+
+------------------------------------------------------------------------------------------------------------
+Funcion concat
+
+concat :: [[a]]->[a]
+
+concat xss = [x | xs <- xss, x <- xs]
+
+------------------------------------------------------------------------------------------------------------
+
+Guardas
+
+[x | x <- [1..10], even x]  esto solo imprimira los pares [2,4,6,8,10]
+
+factors n = [x | x <- [1..n], n ´mod´ x==0]
+
+------------------------------------------------------------------------------------------------------------
+
+minimo (x,y) = if x <= y then x else y
+
+tarea  construir arboles
+minimo(2,7)
