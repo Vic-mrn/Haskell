@@ -1,5 +1,1 @@
-suma_cuad_4 :: [Integer] -> Integer
-suma_cuad_4 [] = 0
-suma_cuad_4 (x:xs) = x*x + suma_cuad_4 xs
-
-
+area a b c = sqrt (s*(s-a)*(s-b)*(s-c)) where s = (a+b+c)/2
